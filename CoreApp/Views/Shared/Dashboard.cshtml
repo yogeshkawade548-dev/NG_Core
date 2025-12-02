@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
+    <link href="~/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-primary text-white py-1">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center w-100">
+                <h4 class="mb-0">Inex Tracker</h4>
+                <a href="/Home/Login" class="btn btn-outline-light btn-sm">Logout</a>
+            </div>
+        </div>
+    </header>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <a href="/Home/LayoutPage?card=master" class="text-decoration-none">
+                    <div class="card bg-primary text-white text-center dashboard-card">
+                        <div class="card-body py-4">
+                            <div class="card-icon">📋</div>
+                            <h5 class="card-title mt-2">Master</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="/Home/LayoutPage?card=settings" class="text-decoration-none">
+                    <div class="card bg-warning text-white text-center dashboard-card">
+                        <div class="card-body py-4">
+                            <div class="card-icon">⚙️</div>
+                            <h5 class="card-title mt-2">Inventory</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="/Home/LayoutPage?card=reports" class="text-decoration-none">
+                    <div class="card bg-success text-white text-center dashboard-card">
+                        <div class="card-body py-4">
+                            <div class="card-icon">📊</div>
+                            <h5 class="card-title mt-2">Reports</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

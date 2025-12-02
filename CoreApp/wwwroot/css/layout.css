@@ -1,0 +1,88 @@
+.sidebar { 
+    position: fixed; 
+    top: 0; 
+    left: -250px; 
+    width: 250px; 
+    height: 100vh; 
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+    z-index: 999; 
+    transition: left 0.3s; 
+}
+
+.sidebar.show { 
+    left: 0; 
+}
+
+.content { 
+    margin-left: 0; 
+    transition: margin-left 0.3s; 
+}
+
+.content.shifted { 
+    margin-left: 250px; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.header-with-sidebar { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s; 
+    border-bottom: 2px solid #fff; 
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important; 
+    z-index: 1001;
+}
+
+.header-with-sidebar.shifted { 
+    left: 0;
+    width: 100vw;
+}
+
+.sidebar .nav-link:hover {
+    background: rgba(255,255,255,0.2) !important;
+    transform: translateX(5px);
+    transition: all 0.2s ease;
+}
+
+.sidebar .nav-item {
+    margin-bottom: 8px;
+}
+
+#searchBox {
+    margin-top: 15%;
+    background: rgba(255,255,255,0.9) !important;
+    border: 1px solid rgba(255,255,255,0.3) !important;
+    color: #333 !important;
+    display: block !important;
+    width: 100% !important;
+    visibility: visible !important;
+}
+
+#searchBox::placeholder {
+    color: #666 !important;
+}
+
+.sidebar .p-3 {
+    display: block !important;
+    visibility: visible !important;
+}

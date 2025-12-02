@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Layout</title>
+    <link href="~/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/css/layout.css" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar show" id="sidebar">
+        <div class="p-3" style="padding-top: 70px; position: relative; z-index: 1002;">
+            <div style="margin-top: 20px; margin-bottom: 15px;">
+                <input type="text" id="searchBox" placeholder="Search menu..." onkeyup="searchMenu()" style="width: 100%; padding: 8px; border: none; border-radius: 4px; background: rgba(255,255,255,0.9); color: #333; font-size: 14px;">
+            </div>
+            <hr style="border: none; height: 1px; background: rgba(255,255,255,0.7); margin: 15px 0;">
+            <div id="sidebarMenu">
+                <!-- Menu will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+    
+    <header class="text-white py-1 header-with-sidebar shifted" id="header">
+        <div class="d-flex justify-content-between align-items-center px-3">
+            <div class="d-flex align-items-center">
+                <button class="btn btn-outline-light btn-sm me-3" onclick="toggleSidebar()">☰</button>
+                <a href="/Home/Dashboard" class="text-white text-decoration-none">
+                    <h4 class="mb-0">Inex Tracker</h4>
+                </a>
+            </div>
+            <a href="/Home/Login" class="btn btn-outline-light btn-sm">Logout</a>
+        </div>
+    </header>
+    
+    <div class="content shifted" id="content" style="margin-top: 45px;">
+        <!-- Main content area -->
+    </div>
+    
+    <script src="~/js/layout.js"></script>
+    <script src="~/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
