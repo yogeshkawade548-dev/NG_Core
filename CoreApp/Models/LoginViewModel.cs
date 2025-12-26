@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace CoreApp.Models;
 
-public class LoginViewModel
+public class LoginViewModel 
 {
     private string _username = string.Empty;
     private string _password = string.Empty;
