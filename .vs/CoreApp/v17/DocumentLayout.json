@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Project\\Core_App\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|CoreApp\\CoreApp.csproj|d:\\project\\core_app\\coreapp\\dataaccess\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|CoreApp\\CoreApp.csproj|solutionrelative:coreapp\\dataaccess\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|CoreApp\\CoreApp.csproj|d:\\project\\core_app\\coreapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|CoreApp\\CoreApp.csproj|solutionrelative:coreapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|CoreApp\\CoreApp.csproj|d:\\project\\core_app\\coreapp\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|CoreApp\\CoreApp.csproj|solutionrelative:coreapp\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginService.cs",
+              "DocumentMoniker": "D:\\Project\\Core_App\\CoreApp\\DataAccess\\LoginService.cs",
+              "RelativeDocumentMoniker": "CoreApp\\DataAccess\\LoginService.cs",
+              "ToolTip": "D:\\Project\\Core_App\\CoreApp\\DataAccess\\LoginService.cs",
+              "RelativeToolTip": "CoreApp\\DataAccess\\LoginService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-26T16:43:58.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Project\\Core_App\\CoreApp\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "CoreApp\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Project\\Core_App\\CoreApp\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "CoreApp\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T06:36:43.158Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "D:\\Project\\Core_App\\CoreApp\\Models\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "CoreApp\\Models\\LoginViewModel.cs",
+              "ToolTip": "D:\\Project\\Core_App\\CoreApp\\Models\\LoginViewModel.cs",
+              "RelativeToolTip": "CoreApp\\Models\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T17:54:11.823Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

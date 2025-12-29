@@ -1,0 +1,4 @@
+wwwroot\css\bootstrap.min.css
+wwwroot\css\layout.css
+wwwroot\js\bootstrap.bundle.min.js
+wwwroot\js\layout.js
