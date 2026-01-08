@@ -6,6 +6,17 @@
     <title>Layout</title>
     <link href="~/css/bootstrap.min.css" rel="stylesheet">
     <link href="~/css/layout.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .logout-icon {
+            font-size: 18px;
+            margin-left: 8px;
+            display: inline-block;
+        }
+        .logout-icon:hover {
+            opacity: 0.8;
+        }
+    </style>
 </head>
 <body>
     <div class="sidebar show" id="sidebar">
@@ -28,7 +39,12 @@
                     <h4 class="mb-0">Inex Tracker</h4>
                 </a>
             </div>
-            <a href="/Home/Login" class="btn btn-outline-light btn-sm">Logout</a>
+            <div class="d-flex align-items-center">
+                <span class="me-3">Welcome, @ViewBag.Username</span>
+                <a href="/Home/Logout" class="text-white text-decoration-none logout-icon" title="Logout">
+                    <i class="fa fa-sign-out" aria-hidden="true"></i>
+                </a>
+            </div>
         </div>
     </header>
     

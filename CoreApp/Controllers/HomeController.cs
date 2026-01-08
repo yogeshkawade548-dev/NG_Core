@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using CoreApp.DataAccess;
 using CoreApp.Models;
+using Microsoft.AspNetCore.Http;
+using CoreApp.Services;
 
 namespace CoreApp.Controllers;
 
@@ -10,25 +12,18 @@ public class HomeController : Controller
 {
     private readonly LoginService _loginService;
     private readonly ILogger<HomeController> _logger;
+    private readonly IJwtService _jwtService;
 
-    public HomeController(LoginService loginService, ILogger<HomeController> logger)
+    public HomeController(LoginService loginService, ILogger<HomeController> logger, IJwtService jwtService)
     {
         _loginService = loginService ?? throw new ArgumentNullException(nameof(loginService));
         _logger = logger ?? throw new ArgumentNullException(nameof(logger));
+        _jwtService = jwtService ?? throw new ArgumentNullException(nameof(jwtService));
     }
 
     public IActionResult Index()
     {
-        try
-        {
-            _logger.LogInformation("Index page accessed, redirecting to Login");
-            return RedirectToAction("Login");
-        }
-        catch (Exception ex)
-        {
-            _logger.LogError(ex, "Error in Index action");
-            return View("Error");
-        }
+        return RedirectToAction("Login");
     }
 
     public IActionResult Login()
@@ -40,65 +35,39 @@ public class HomeController : Controller
     [ValidateAntiForgeryToken]
     public IActionResult Login([Bind("Username,Password")] LoginViewModel model)
     {
-        try
+        if (ModelState.IsValid && _loginService.ValidateUser(model.Username, model.Password))
         {
-            if (ModelState.IsValid)
+            var token = _jwtService.GenerateToken(model.Username);
+            Response.Cookies.Append("jwt_token", token, new CookieOptions
             {
-                if (_loginService.ValidateUser(model.Username, model.Password))
-                {
-                    return RedirectToAction("Dashboard");
-                }
-                ModelState.AddModelError("", "Invalid username or password");
-            }
+                HttpOnly = true,
+                Secure = true,
+                SameSite = SameSiteMode.Strict,
+                Expires = DateTime.UtcNow.AddHours(24)
+            });
+            return RedirectToAction("Dashboard");
         }
-        catch (Exception ex)
-        {
-            var sanitizedUsername = model?.Username?.Replace("\n", "").Replace("\r", "") ?? "unknown";
-            _logger.LogError(ex, "Login attempt failed for user: {Username}", sanitizedUsername);
-            ModelState.AddModelError("", "An error occurred during login. Please try again.");
-        }
+        ModelState.AddModelError("", "Invalid username or password");
         return View(model);
     }
 
+    [JwtAuthorize]
     public IActionResult Dashboard()
     {
-        try
-        {
-            _logger.LogInformation("Dashboard accessed successfully");
-            return View();
-        }
-        catch (Exception ex)
-        {
-            _logger.LogError(ex, "Error accessing dashboard");
-            return View("Error");
-        }
+        ViewBag.Username = HttpContext.Items["Username"]?.ToString();
+        return View();
     }
 
-    public IActionResult ForgotPassword()
-    {
-        try
-        {
-            _logger.LogInformation("ForgotPassword page accessed");
-            return View();
-        }
-        catch (Exception ex)
-        {
-            _logger.LogError(ex, "Error accessing forgot password page");
-            return View("Error");
-        }
-    }
-
+    [JwtAuthorize]
     public IActionResult LayoutPage()
     {
-        try
-        {
-            _logger.LogInformation("Layout page accessed");
-            return View("Layout");
-        }
-        catch (Exception ex)
-        {
-            _logger.LogError(ex, "Error accessing layout page");
-            return View("Error");
-        }
+        ViewBag.Username = HttpContext.Items["Username"]?.ToString();
+        return View("Layout");
+    }
+
+    public IActionResult Logout()
+    {
+        Response.Cookies.Delete("jwt_token");
+        return RedirectToAction("Login");
     }
 }

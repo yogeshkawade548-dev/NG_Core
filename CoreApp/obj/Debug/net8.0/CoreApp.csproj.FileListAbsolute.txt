@@ -77,3 +77,12 @@ D:\Project\Core_App\CoreApp\obj\Debug\net8.0\refint\CoreApp.dll
 D:\Project\Core_App\CoreApp\obj\Debug\net8.0\CoreApp.pdb
 D:\Project\Core_App\CoreApp\obj\Debug\net8.0\CoreApp.genruntimeconfig.cache
 D:\Project\Core_App\CoreApp\obj\Debug\net8.0\ref\CoreApp.dll
+D:\Project\Core_App\CoreApp\bin\Debug\net8.0\appsettings.json
+D:\Project\Core_App\CoreApp\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Project\Core_App\CoreApp\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Project\Core_App\CoreApp\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Project\Core_App\CoreApp\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\Project\Core_App\CoreApp\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\Project\Core_App\CoreApp\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Project\Core_App\CoreApp\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\Project\Core_App\CoreApp\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

@@ -22,6 +22,7 @@ try
     builder.Logging.AddConsole().SetMinimumLevel(LogLevel.Information);
     
     builder.Services.AddScoped<IPasswordService, PasswordService>();
+    builder.Services.AddScoped<IJwtService, JwtService>();
     builder.Services.AddScoped<UserRepository>(provider => 
         new UserRepository(connectionString, 
             provider.GetRequiredService<IPasswordService>(),
@@ -29,6 +30,7 @@ try
     builder.Services.AddScoped<LoginService>();
     builder.Services.AddControllersWithViews();
     builder.Services.AddAntiforgery();
+    builder.Services.AddSession();
 
     var app = builder.Build();
     var logger = app.Services.GetRequiredService<ILogger<Program>>();
@@ -44,6 +46,7 @@ try
     }
 
     app.UseStaticFiles();
+    app.UseSession();
     app.UseRouting();
 
     app.MapGet("/", () => Results.Redirect("/Home/Login"));

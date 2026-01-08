@@ -3,12 +3,32 @@
   "WorkspaceRootPath": "D:\\Project\\Core_App\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|CoreApp\\CoreApp.csproj|d:\\project\\core_app\\coreapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|CoreApp\\CoreApp.csproj|solutionrelative:coreapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|CoreApp\\CoreApp.csproj|d:\\project\\core_app\\coreapp\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|CoreApp\\CoreApp.csproj|solutionrelative:coreapp\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|CoreApp\\CoreApp.csproj|d:\\project\\core_app\\coreapp\\dataaccess\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|CoreApp\\CoreApp.csproj|solutionrelative:coreapp\\dataaccess\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|CoreApp\\CoreApp.csproj|d:\\project\\core_app\\coreapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|CoreApp\\CoreApp.csproj|solutionrelative:coreapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|CoreApp\\CoreApp.csproj|d:\\project\\core_app\\coreapp\\dataaccess\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|CoreApp\\CoreApp.csproj|solutionrelative:coreapp\\dataaccess\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|CoreApp\\CoreApp.csproj|d:\\project\\core_app\\coreapp\\services\\ipasswordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|CoreApp\\CoreApp.csproj|solutionrelative:coreapp\\services\\ipasswordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|CoreApp\\CoreApp.csproj|d:\\project\\core_app\\coreapp\\views\\home\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|CoreApp\\CoreApp.csproj|solutionrelative:coreapp\\views\\home\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|CoreApp\\CoreApp.csproj|d:\\project\\core_app\\coreapp\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|CoreApp\\CoreApp.csproj|solutionrelative:coreapp\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|CoreApp\\CoreApp.csproj|d:\\project\\core_app\\coreapp\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,40 +42,102 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "JwtService.cs",
+              "DocumentMoniker": "D:\\Project\\Core_App\\CoreApp\\Services\\JwtService.cs",
+              "RelativeDocumentMoniker": "CoreApp\\Services\\JwtService.cs",
+              "ToolTip": "D:\\Project\\Core_App\\CoreApp\\Services\\JwtService.cs",
+              "RelativeToolTip": "CoreApp\\Services\\JwtService.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAApwF4AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T17:38:48.788Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "IPasswordService.cs",
+              "DocumentMoniker": "D:\\Project\\Core_App\\CoreApp\\Services\\IPasswordService.cs",
+              "RelativeDocumentMoniker": "CoreApp\\Services\\IPasswordService.cs",
+              "ToolTip": "D:\\Project\\Core_App\\CoreApp\\Services\\IPasswordService.cs",
+              "RelativeToolTip": "CoreApp\\Services\\IPasswordService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T17:38:03.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "D:\\Project\\Core_App\\CoreApp\\DataAccess\\UserRepository.cs",
+              "RelativeDocumentMoniker": "CoreApp\\DataAccess\\UserRepository.cs",
+              "ToolTip": "D:\\Project\\Core_App\\CoreApp\\DataAccess\\UserRepository.cs",
+              "RelativeToolTip": "CoreApp\\DataAccess\\UserRepository.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAewG8AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T17:37:22.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ForgotPassword.cshtml",
+              "DocumentMoniker": "D:\\Project\\Core_App\\CoreApp\\Views\\Home\\ForgotPassword.cshtml",
+              "RelativeDocumentMoniker": "CoreApp\\Views\\Home\\ForgotPassword.cshtml",
+              "ToolTip": "D:\\Project\\Core_App\\CoreApp\\Views\\Home\\ForgotPassword.cshtml",
+              "RelativeToolTip": "CoreApp\\Views\\Home\\ForgotPassword.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-08T16:34:54.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\Project\\Core_App\\CoreApp\\Views\\Home\\Login.cshtml",
+              "RelativeDocumentMoniker": "CoreApp\\Views\\Home\\Login.cshtml",
+              "ToolTip": "D:\\Project\\Core_App\\CoreApp\\Views\\Home\\Login.cshtml",
+              "RelativeToolTip": "CoreApp\\Views\\Home\\Login.cshtml",
+              "ViewState": "AgIAACMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-08T16:34:36.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "LoginService.cs",
               "DocumentMoniker": "D:\\Project\\Core_App\\CoreApp\\DataAccess\\LoginService.cs",
               "RelativeDocumentMoniker": "CoreApp\\DataAccess\\LoginService.cs",
               "ToolTip": "D:\\Project\\Core_App\\CoreApp\\DataAccess\\LoginService.cs",
               "RelativeToolTip": "CoreApp\\DataAccess\\LoginService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAewC4AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-26T16:43:58.905Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\Project\\Core_App\\CoreApp\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "CoreApp\\Controllers\\HomeController.cs",
               "ToolTip": "D:\\Project\\Core_App\\CoreApp\\Controllers\\HomeController.cs",
               "RelativeToolTip": "CoreApp\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAIAwwC0AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T06:36:43.158Z"
+              "WhenOpened": "2025-12-21T06:36:43.158Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "LoginViewModel.cs",
               "DocumentMoniker": "D:\\Project\\Core_App\\CoreApp\\Models\\LoginViewModel.cs",
               "RelativeDocumentMoniker": "CoreApp\\Models\\LoginViewModel.cs",

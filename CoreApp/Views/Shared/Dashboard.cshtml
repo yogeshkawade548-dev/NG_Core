@@ -5,13 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dashboard</title>
     <link href="~/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .logout-icon {
+            font-size: 18px;
+            margin-left: 8px;
+            display: inline-block;
+        }
+        .logout-icon:hover {
+            opacity: 0.8;
+        }
+        .dashboard-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+        }
+    </style>
 </head>
 <body>
-    <header class="bg-primary text-white py-1">
+    <header class="text-white py-1" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center w-100">
                 <h4 class="mb-0">Inex Tracker</h4>
-                <a href="/Home/Login" class="btn btn-outline-light btn-sm">Logout</a>
+                <div class="d-flex align-items-center">
+                    <span class="me-3">Welcome, @ViewBag.Username</span>
+                    <a href="/Home/Logout" class="text-white text-decoration-none logout-icon" title="Logout">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </header>
